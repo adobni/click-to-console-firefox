@@ -1,0 +1,25 @@
+{
+    "applications": {
+        "gecko": {
+          "id": "click-to-console-firefox@mulesoft.com"
+        }
+    }, 
+   "background": {
+      //"persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "description": "Extension to open Salesforce links in Salesforce Console tabs. Ported from the original Chrome version: https://chrome.google.com/webstore/detail/click-to-console/aciejfpenmfodekmppiehcbcgkjigjhl?hl=en because the Firefox version (https://addons.mozilla.org/en-US/firefox/addon/click_to_console/) doesn't work with Firefox 57+.",
+   "icons": {
+      "128": "click-to-console-logo.png"
+   },
+   "manifest_version": 2,
+   "name": "Click-to-Console",
+   //"options_page": "options.html",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "http://*/", "https://*/", "webRequest", "webNavigation", "cookies", "storage" ],
+//   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.9.0"
+}
